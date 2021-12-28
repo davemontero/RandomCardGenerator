@@ -1,0 +1,64 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #0e7e12;
+}
+
+
+.card-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    width: 400px;
+    height: 80%;
+    background-color: #fff;
+    margin-top: 15px;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card i {
+    padding-left: 1.2rem;
+    font-size: 8rem;
+}
+
+.card span {
+    align-self: center;
+    font-weight: 900;
+    font-size: 9rem;
+}
+
+.card i:last-child {
+    transform: rotate(180deg);
+}
+
+.hearts::before {
+    content: " \2665";
+    color: #f00;
+}
+
+.spades::before {
+    content: " \2660";
+    color: #000;
+}
+
+.clubs::before {
+    content: " \2663";
+    color: #000;
+}
+
+.diams::before {
+    content: " \2666";
+    color: #f00;
+}
